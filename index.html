@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koskuy</title>
+    <!-- style tailwindcss -->
+    <link rel="stylesheet" href="final.css" />
+    <!-- Googlefont (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="asset/koskuylogo.svg" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://achmatfajrii.github.io/ProjectProgate/progatetumb.jpg"
+    />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="Koskuy | Platform Cari Kos" />
+    <meta
+      property="og:description"
+      content="Koskuy adalah platform khusus buat kamu yang ingin mencari kos"
+    />
+    <style>
+      .animate-text span:nth-child(1) {
+        animation-delay: 0.5s;
+      }
+      .animate-text span:nth-child(2) {
+        animation-delay: 3.5s;
+      }
+      .animate-text span:nth-child(3) {
+        animation-delay: 6.5s;
+      }
+
+      .animate-text span {
+        position: absolute;
+        opacity: 0;
+        overflow: hidden;
+        animation: animate 20s linear infinite 0s;
+      }
+
+      @-webkit-keyframes animate {
+        0% {
+          opacity: 0;
+        }
+        2% {
+          opacity: 0;
+          -webkit-transform: translateY(-30px);
+        }
+        5% {
+          opacity: 1;
+          -webkit-transform: translateY(0px);
+        }
+        17% {
+          opacity: 1;
+          -webkit-transform: translateY(0px);
+        }
+        20% {
+          opacity: 0;
+          -webkit-transform: translateY(30px);
+        }
+      }
+
+      @keyframes zoom-in-out {
+        0% {
+          transform: scale(1);
+        }
+        25% {
+          transform: scale(0.6);
+        }
+        50% {
+          transform: scale(0.7);
+        }
+        75% {
+          transform: scale(0.6);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      .medsos {
+        animation-name: zoom-in-out;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body
+    style="font-family: Poppins; background-image: url('asset/background.svg')"
+  >
+    <!-- Navbar -->
+    <div class="container px-20">
+      <nav
+        class="h-24 flex justify-between items-center border-b-2 border-solid border-neutral-400"
+      >
+        <div class="logo">
+          <img class="w-16 md:w-24" src="asset/koskuylogo.svg" alt="" />
+        </div>
+        <div class="bar md:hidden">
+          <img class="w-6" src="asset/bars-solid.svg" />
+        </div>
+        <div class="list-navbar hidden md:flex">
+          <li class="list-none mx-1 py-1 px-4">
+            <a
+              class="text-sm font-semibold text-gray-500 hover:text-black transition-all ease-in-out"
+              href=""
+              >Promosikan Kosmu</a
+            >
+          </li>
+          <li
+            class="list-none mx-1 py-1 px-4 text-[#3D7E8C] border-[#3D7E8C] border-solid border-2 rounded-md transition-all ease-in-out hover:bg-[#3D7E8C] hover:text-white"
+          >
+            <a class="text-sm font-semibold" href="">Masuk</a>
+          </li>
+          <li class="list-none mx-1 py-1">|</li>
+          <li class="list-none mx-1 py-1 pr-4">
+            <a
+              class="text-sm font-semibold text-gray-500 hover:text-black transition-all ease-in-out"
+              href=""
+              >Daftar</a
+            >
+          </li>
+        </div>
+      </nav>
+      <section class="main mt-5">
+        <div class="desc flex justify-between">
+          <div class="content-left">
+            <h1 class="text-xl font-bold md:text-4xl">
+              Sekarang cari kos <br />
+              <div class="animate-text">
+                <span class="text-[#3D7E8C]">modal rebahan</span>
+                <span class="text-[#3D7E8C]">modal Hp</span>
+                <span class="text-[#3D7E8C]">impian kamu</span>
+              </div>
+            </h1>
+            <p class="text-sm mt-14 md:text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              <br />
+              distinctio aut soluta odit repudiandae, quia inventore amet <br />
+              laboriosam velit saepe
+            </p>
+            <button
+              class="block w-full font-bold text-xs mt-4 bg-[#3D7E8C] text-white py-2 px-5 rounded-md md:w-36 hover:bg-[#2d6d7b]"
+            >
+              Selengkapnya
+            </button>
+            <div class="testimoni flex mt-4">
+              <div class="list-image flex">
+                <img
+                  class="block w-11 rounded-full"
+                  src="asset/avatar1.png"
+                  alt=""
+                />
+                <img
+                  class="block w-11 rounded-full relative right-4"
+                  src="asset/avatar2.png"
+                  alt=""
+                />
+                <img
+                  class="block w-11 rounded-full relative right-7"
+                  src="asset/avatar3.png"
+                  alt=""
+                />
+              </div>
+              <div class="rating">
+                <div class="start">
+                  <img class="block w-24" src="asset/rating.png" alt="" />
+                </div>
+                <p class="text-xs font-semibold">(5 dari 124 penghuni kos)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="banner hidden md:block">
+            <img src="asset/bannerkoskuy.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <div class="search m-auto mt-14">
+        <h2 class="sub-title text-base font-semibold text-center md:text-xl">
+          Yuk cari kos idamanmu
+        </h2>
+        <div
+          class="input flex items-center w-full h-10 p-7 rounded-lg mt-2 bg-[#3D7E8C] md:w-[50%] md:mx-auto md:h-14"
+        >
+          <h3 class="mr-3 text-sm text-white">Cari</h3>
+
+          <input
+            class="block w-full rounded-md text-xs p-2"
+            type="text"
+            placeholder="Mau ngekos dimana?"
+          />
+        </div>
+      </div>
+      <div class="medsos absolute right-16">
+        <img class="w-20" src="asset/wa.svg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
